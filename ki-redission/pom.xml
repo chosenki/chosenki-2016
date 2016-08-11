@@ -11,5 +11,17 @@
 
     <artifactId>ki-redission</artifactId>
 
+    <properties>
+        <redisson.version>2.2.21</redisson.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

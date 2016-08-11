@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="ki.test.consumer"></dubbo:application>
+    <!-- 消息中心地址 -->
+    <dubbo:registry address="${dubbo.registry}" check="false"></dubbo:registry>
+    <!--<dubbo:registry address="zookeeper://192.168.131.132:2181" check="false"></dubbo:registry>-->
+
+    <!-- 声明接口 -->
+    <dubbo:reference id="kiTestService" interface="com.ki.service.KiTestService"></dubbo:reference>
+
+</beans>

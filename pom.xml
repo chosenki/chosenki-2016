@@ -10,19 +10,11 @@
     <version>0.1</version>
 
     <modules>
+        <module>ki1st-backend</module>
+        <module>ki1st-frontend</module>
+
         <module>ki-redission</module>
+        <module>ki1st-api</module>
     </modules>
-
-    <properties>
-        <redisson.version>2.2.21</redisson.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.redisson</groupId>
-            <artifactId>redisson</artifactId>
-            <version>${redisson.version}</version>
-        </dependency>
-    </dependencies>
 
 </project>
