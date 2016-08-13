@@ -9,10 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class RunBackend {
 
     public static void main(String[] args){
-        System.setProperty("java.version", "1.8");
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:config/ki-context.xml");
         com.alibaba.dubbo.container.Main.main(args);
-
     }
 
 }
