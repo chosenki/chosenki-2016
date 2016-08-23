@@ -3,8 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>XTQB</title>
+    <link rel="stylesheet" href="/assets/assets/js/ol3/ol.css">
+    <style>
+    .map {
+    height: 400px;
+    width: 100%;
+    }
+    </style>
 </head>
 <body>
-  <h1>XTQB-index</h1>
+    <h1>XTQB-index</h1>
+
+    <div id="ol3Map" class="map"></div>
+
+    <script src="/assets/assets/js/ol3/ol-debug.js"></script>
+    <script type="text/javascript">
+      var map = new ol.Map({
+          target: 'ol3Map',
+          layers: [
+              new ol.layer.Tile({
+                  source: new ol.source.OSM()
+              })
+          ],
+          view: new ol.View({
+              center: ol.proj.fromLonLat([37.41, 8.82]),
+              zoom: 4
+          })
+      });
+    </script>
 </body>
 </html>

@@ -40,23 +40,19 @@ class Application @Inject() (environment: play.api.Environment, configuration: p
     Ok(Json.toJson(json))
   }
 
-  def host = Action {
+  def slick = Action {
     val dbConfig = DbConfig.getDbConfig
     println(dbConfig)
     val db = DbConfig.getDb
     println(db)
-    //implicit val HostFormat = Json.format[Host]
-    val h = Host.filter(_.ipv4 === "192.168.55.10").drop(0).result.head
-    val h1 = Host.filter(_.ipv4 === "192.168.55.11").result
-    db.run(h).map {
+    val action = User.filter(_.name === "wx").result
+    db.run(action).map {
       result =>
-      println(result)
-      println(result.hostname)
-      //Ok(Json.toJson(result.hostname))
+        result.foreach(u=>{
+          println(u.address)
+        })
     }
-
-    //Ok(Json.toJson(db.run(h1)))
-    Ok(views.html.index())
+    Ok(views.html.main())
   }
 
 }

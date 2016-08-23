@@ -2,7 +2,7 @@ import com.typesafe.config.ConfigFactory
 
 name := "ki-xtqb"
 
-version := "1.0"
+version := "0.1"
 
 lazy val `ki-xtqb` = (project in file(".")).enablePlugins(PlayScala)
 
