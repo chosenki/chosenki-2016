@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "Todos",
   "version": "0.0.1",
-  "description": "app",
+  "description": "Todos",
   "scripts": {
     "start": "node server.js",
     "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "bugs": {
+
   },
   "dependencies": {
     "react": "^15.3.1",
