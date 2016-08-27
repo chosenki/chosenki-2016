@@ -1,0 +1,39 @@
+{
+  "name": "xtqb-front",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node debug server.js"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular2": "^2.0.0-beta.17",
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.5",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.2.2",
+    "express": "^4.14.0",
+    "fetch": "^1.1.0",
+    "foundation": "^4.2.1-1",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "html-loader": "^0.4.3",
+    "jquery": "^3.1.0",
+    "openlayers": "^3.17.1",
+    "pug": "^2.0.0-beta5",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "three": "^0.80.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.10",
+    "copy-webpack-plugin": "^3.0.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack": "^1.13.2"
+  }
+}

@@ -2,7 +2,7 @@ import com.typesafe.config.ConfigFactory
 
 name := "ki-xtqb"
 
-version := "0.1"
+version := "0.0.1"
 
 lazy val `ki-xtqb` = (project in file(".")).enablePlugins(PlayScala)
 
@@ -27,6 +27,8 @@ libraryDependencies ++= Seq(
   "com.zaxxer" % "HikariCP-java6" % "2.3.13" % "provided",
   "org.slf4j" % "slf4j-api" % "1.7.21",
   "org.slf4j" % "slf4j-nop" % "1.7.21",
+  "ch.qos.logback" % "logback-core" % "1.1.7",
+  "ch.qos.logback" % "logback-classic" % "1.1.7",
   "mysql" % "mysql-connector-java" % "5.1.37"
 
 )
