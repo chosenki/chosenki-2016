@@ -18,9 +18,17 @@
         <HikariCP.version>2.4.7</HikariCP.version>
         <jetty.version>9.2.10.v20150310</jetty.version>
         <mysql.version>5.1.39</mysql.version>
+        <lombok.version>1.16.10</lombok.version>
     </properties>
 
     <dependencies>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
 
         <!-- Mysql -->
         <dependency>
@@ -109,6 +117,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
