@@ -19,9 +19,16 @@
         <jetty.version>9.2.10.v20150310</jetty.version>
         <mysql.version>5.1.39</mysql.version>
         <lombok.version>1.16.10</lombok.version>
+        <redisson.version>2.3.0</redisson.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
+        </dependency>
 
         <!-- Lombok -->
         <dependency>
