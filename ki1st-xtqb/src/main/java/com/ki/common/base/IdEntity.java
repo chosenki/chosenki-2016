@@ -25,7 +25,7 @@ public abstract class IdEntity implements BaseId<String>,Serializable {
     @Id
     @GeneratedValue(generator = "uuid2", strategy = GenerationType.AUTO)
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(columnDefinition = "CHAR(36)")
+    @Column(name = "ID",columnDefinition = "CHAR(36)")
     public String getId() {
         return id;
     }

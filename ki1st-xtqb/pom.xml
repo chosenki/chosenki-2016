@@ -20,10 +20,24 @@
         <mysql.version>5.1.39</mysql.version>
         <lombok.version>1.16.10</lombok.version>
         <redisson.version>2.3.0</redisson.version>
+        <jodd.version>3.7.1</jodd.version>
     </properties>
 
     <dependencies>
 
+        <!-- Jodd -->
+        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-core</artifactId>
+            <version>${jodd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-json</artifactId>
+            <version>${jodd.version}</version>
+        </dependency>
+
+        <!-- Reddission -->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
